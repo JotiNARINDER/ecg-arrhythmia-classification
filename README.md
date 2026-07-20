@@ -1,24 +1,24 @@
 # ECG Arrhythmia Classification 🫀
 
-Détection automatique d'arythmies cardiaques à partir de signaux ECG.
+Automated detection of cardiac arrhythmias from ECG signals.
 
-## Résultats
-- **Accuracy : 99.2%**
-- 21 561 battements analysés
-- 10 enregistrements (MIT-BIH PhysioNet)
+## Results
+- **Accuracy: 99.2%**
+- 21,561 heartbeats analyzed
+- 10 recordings (MIT-BIH PhysioNet)
 
-## Méthodologie
-1. Chargement des signaux ECG (wfdb)
-2. Filtrage passe-bande 0.5–50 Hz (scipy)
-3. Segmentation des battements autour du pic R
-4. Extraction de 8 features statistiques par battement
-5. Classification Random Forest (scikit-learn)
+## Methodology
+1. Loading ECG signals (wfdb)
+2. 0.5–50 Hz bandpass filtering (scipy)
+3. Heartbeat segmentation around the R-peak
+4. Extraction of 8 statistical features per heartbeat
+5. Random Forest Classification (scikit-learn)
 
 ## Dataset
 MIT-BIH Arrhythmia Database — PhysioNet
 
-## Stack technique
+## Tech Stack
 Python · wfdb · scikit-learn · scipy · matplotlib · seaborn
 
-## Résultats visuels
+## Visual results
 ![Results](results.png)
